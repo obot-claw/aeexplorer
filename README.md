@@ -52,3 +52,17 @@ More information is available in the project's [wiki](https://github.com/RhoInc/
 - [API](https://github.com/RhoInc/aeexplorer/wiki/API)
 - [Technical Documentation](https://github.com/RhoInc/aeexplorer/wiki/Technical-Documentation) 
 - [Data Guidelines](https://github.com/RhoInc/aeexplorer/wiki/Data-Guidelines)
+
+## P004 nextgen functional requirements status
+
+This section tracks the nextgen Chart.js spike against the legacy wiki requirements. The current spike is intentionally partial; unmet items become migration backlog before any replacement release.
+
+| Requirement area | Legacy requirement summary | Spike status |
+|---|---|---|
+| AE grouping | Summarize AE categories by treatment group. | Partial: stacked treatment-group bar chart implemented with synthetic AE data. |
+| Summary unit | Toggle between participant-level and event-level summaries. | Partial: participant/event summary mode implemented in the spike. |
+| Search and prevalence | Search AE terms and filter by minimum prevalence with immediate updates. | Partial: search and minimum prevalence controls implemented. |
+| Filtering | Support configured filters and no-results messaging. | Not started beyond search/prevalence controls. |
+| Hover details | Show counts, percentages, group differences, and highlight hovered values. | Partial: Chart.js tooltips available; detailed group-difference behavior not implemented. |
+| Linked listing | Clicking a category displays underlying AE records. | Partial: selected term listing implemented. |
+| Regression coverage | Validate filtering, prevalence, summary mode, listing, bootstrap/no-bootstrap layout, and no-results state. | Not started; requires automated browser tests. |
